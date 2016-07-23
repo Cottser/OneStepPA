@@ -53,3 +53,7 @@ notes {
 :focus {
     outline: 0;
 }
+
+.nobreak {
+  white-space:pre;
+}
