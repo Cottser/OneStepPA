@@ -9,17 +9,19 @@ body {
   font-weight:bold;
 }
 
+img { display: none; }
+
 h1, h2, h3, p {
   margin:0;
 }
 
 em, a {
-  font-style:normal;
-  color:#8dbd0c;
+  font-style:inherit;
+  color:#ff1493;
 }
 
 a {
-  background:#34d0e7;
+  background:#a7fa56;
   color:#000;
   text-decoration:none;
 }

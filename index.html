@@ -1,19 +1,310 @@
 <!DOCTYPE html><html><head><title>One Step at a Time</title><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 <link href='big.css' rel='stylesheet' type='text/css' />
 <style>
+  .take-away div {
+    color: #a7fa56;
+    font-style: italic;
+  }
+  .take-away .highlight {
+    color: #ff1493;
+  }
+  .take-away.cat div {
+    color: white;
+  }
+  .image-slide img {
+    display: block;
+  }
 </style>
 <script src='big.js'></script></head><body>
 
-  <div>One Step at a Time</div>
+  <div>
+    One Step at a Time
+    <notes>Turn on screen recording.</notes>
+    <notes>Lessons Learned from Drupal Newbie to Core Committer</notes>
+  </div>
+
+  <div><a href="https://bit.ly/onesteppa">bit.ly/onesteppa</a></div>
 
   <div>
     <span class="nobreak">Scott Reeves</span>
     Cottser
-    <notes>Drupal user since 2011</notes>
-    <notes>Twig team member since 2013</notes>
     <notes>Drupal 8 theme system co-maintainer</notes>
     <notes>Stable base theme maintainer</notes>
     <notes>Provisional core committer for Drupal 8</notes>
+    <notes>Team Lead at Digital Echidna</notes>
+  </div>
+
+  <div>
+    <notes>What follows is my journey of the past 5 years and some things I've learned.</notes>
+    <notes>This is meant to apply to more than Drupal.</notes>
+    <notes>A side project you want to start, a new hobby, whatever.</notes>
+  </div>
+
+  <div>Tweet questions: #HeyCottser</div>
+
+  <div data-bodyclass="take-away">
+    Nobody knows everything…
+    <notes>I don't have all the answers.</notes>
+  </div>
+  <div data-bodyclass="take-away">
+    …but together we know a lot!
+    <notes>I give Cathy Theys (YesCT) credit for this.</notes>
+    <notes>This is a lesson I learned from the core mentoring program.</notes>
+    <notes>Let's rewind.</notes>
+  </div>
+
+  <div>
+    Y2K
+    <notes>Put my first site online in 2000, it was a Quake 1 fan site.</notes>
+  </div>
+
+  <div>
+    …looks best with a Cascading Style Sheet-capable browser, which is either Internet Explorer 3.0+ or Navigator/ Communicator 4.0+.
+    <notes>My first site had this message on it. Internet Explorer 3!</notes>
+    <notes>I went to college for Graphic Design.</notes>
+  </div>
+
+  <div>
+    Before Drupal
+    <notes>In the ~2 years before I started using Drupal I was building web applications using the CakePHP framework.</notes>
+    <notes>I contributed some typo fixes and did many documentation updates.</notes>
+    <notes>I worked on a local open data project built on CakePHP.</notes>
+  </div>
+
+  <div>
+    Early Drupal experiences
+    <notes>Started using Drupal 7 in its early days, 7.0. First site was a tiny 1-page site.</notes>
+  </div>
+
+  <div data-bodyclass="image-slide">
+    <a href="https://twitter.com/Cottser/status/55369727815589888"><img src="assets/drupal-frustration.png" alt="Drupal frustration"></a>
+    <notes>My early experiences weren't great. This tweet is mostly about the form API.</notes>
+    <notes>The theming experience frustrated me. PHP templates and theme functions.</notes>
+  </div>
+
+  <div>
+    Early contrib patches
+    <notes>Most of my early patches actually revolved around Webform, coincidentally or not.</notes>
+    <notes>Webform itself got a few typo type reports.</notes>
+    <notes>A Drupal 6 module called Webform Reports got a bunch of patches.</notes>
+  </div>
+
+  <div>
+    Core mentoring
+    <notes>Early 2012. Somehow I heard about core mentoring (then core office hours).</notes>
+    <notes>Core mentoring happens on IRC.</notes>
+    <notes>How many people know about IRC? (hands)</notes>
+    <notes>IRC is an old chat protocol. Rooms, private messaging, etc.</notes>
+  </div>
+
+  <div>
+    <notes>I would go to core office hours every Monday either 11pm-1am or midnight to 2am depending on DST.</notes>
+    <notes>I did this fairly consistently for a few months.</notes>
+  </div>
+
+  <div data-bodyclass="image-slide">
+    <a href="https://twitter.com/Cottser/status/166706705575591938"><img src="assets/mentoring-nap.png" alt="Having a nap before core mentoring"></a>
+    <notes>Eventually I asked my employer if I could attend the timeslot that was around lunchtime Wednesdays.</notes>
+    <notes>Special shout out to my mentor xjm (Jess).</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Find support
+    <notes>If you can connect with like-minded folks about what you're doing I think it can be a big help.</notes>
+  </div>
+
+  <div>
+    Use Proper Name Case for core modules
+    <notes>One of the first core patches I worked on was literally just changing capitalization.</notes>
+    <notes>I learned about how the community works and about the process without writing code.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Start small
+    <notes>Whatever your version of fixing typos is, start there.</notes>
+    <notes>You can still have bigger goals.</notes>
+    <notes>I kept going to core mentoring and working on smaller issues in core.</notes>
+  </div>
+
+  <div>
+    Core mentor
+    <notes>Around this time I was asked to be a core mentor.</notes>
+    <notes>I mentored on IRC for a couple hours nearly every week for ~2 years.</notes>
+    <notes>Learned a lot from those that I mentored.</notes>
+  </div>
+
+  <div>
+    Sprint in Madison
+    <notes>July 2012. My first sprint and first sprint as a mentor.</notes>
+    <notes>Learned a lot that day.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Practice
+    <notes>One of the biggest things I learned during my time as a mentor was that learning the process was probably the biggest barrier for most people.</notes>
+    <notes>As with many things, practice is key.</notes>
+  </div>
+
+  <div>
+    Drupal Twig
+    <notes>January 2013, wanted to sink my teeth into something more than random core issues. I felt like I knew the process.</notes>
+    <notes>There were formal Drupal 8 initiatives, Twig was not one of them.</notes>
+    <notes>Based on my early experiences with Drupal 7 it was one I was passionate about (TX).</notes>
+    <notes>I was keeping an eye on Twig.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Find or make a fit
+    <notes>This might not apply to a solo project or hobby but if you're doing something more community-based…</notes>
+    <notes>Speaking in Drupal terms you might have to start your own initiative or join an underdog.</notes>
+    <notes>As I was searching for my fit some things happened that convinced me I had found it.</notes>
+  </div>
+
+  <div>
+    There needs to be some pick-up here, real soon, or we might need to have some very hard discussions come mid-Feb. :(<br>
+    – Angie Byron (webchick)
+    <notes>This is part of a comment from webchick on the main Twig issue at the time.</notes>
+    <notes>I saw this comment and it really resonated with me.</notes>
+  </div>
+
+  <div>
+    <notes>A few days later Carl Wiedemann (c4rl) created a ton of issues to convert things to Twig.</notes>
+    <notes>I immediately followed all these issues.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Dive in
+    <notes>Something clicked and I saw an opportunity to help pick things up.</notes>
+    <notes>Fairly soon I found there were some blockers so I started working on those.</notes>
+    <notes>I got in touch with the Twig Team through IRC and they were very kind.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Find your <s>mission</s> <em>passion</em>
+    <notes>I felt great about the work I was doing at this time.</notes>
+    <notes>Pretty soon I was putting in enough hours to call Drupal Twig my second full time job.</notes>
+  </div>
+
+  <div>
+    <notes>It didn't take too long for this to feel unsustainable.</notes>
+    <notes>I wasn't eating properly, I wasn't exercising, I wasn't sleeping enough, the list goes on…</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Try to stay sustainable
+    <notes>Avoid this if you can. Although I felt like I was doing the best work of my life I was overworking myself and setting myself up for burnout.</notes>
+    <notes>I think this type of pattern also shows my privilege and arguably a flaw of most open source communities.</notes>
+    <notes>The people that can spend the most time have the most impact for better or for worse.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Cut distractions
+    <notes>One thing I found helpful during this hectic time was cutting out things like Twitter, TV, etc.</notes>
+    <notes>I think this is perfectly healthy and I don't regret these decisions at all.</notes>
+    <notes>I don't feel as peachy about sacrificing my health and social life.</notes>
+  </div>
+  <div data-bodyclass="take-away cat"><img src="assets/wyatt.jpg" alt="">
+    <s>Cut</s> Cat distractions
+    <notes>Regardless, remember to have some fun.</notes>
+  </div>
+
+  <div>
+    Local sprints
+    <notes>March 2013 organized the first Drupal core sprint in London for Drupal Sprint Weekend.</notes>
+    <notes>Sprints were held all over the world and this has happened every year since (we've participated in every DSW).</notes>
+    <notes>We've also held other sprints outside of DSW.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Get involved locally
+    <notes>Doing these local sprints and meetups was a great way to stay connected to the real world.</notes>
+  </div>
+
+  <div>
+    Theme system maintainer
+    <notes>Around this time a few of the people who were active in Twig were added as component maintainers.</notes>
+    <notes>I remember I was working on Twig things at home when I found out.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Make mistakes
+    <notes>One of the mistakes we made as the Twig team was that we tried to convert everything all at once.</notes>
+    <notes>We were in danger of missing our DrupalCon Portland deadline (late May 2013).</notes>
+    <notes>There were over 60 templates and over 150 theme functions at the time.</notes>
+    <notes>Finally someone had the brilliant idea of only converting the templates rather than both the templates and theme functions.</notes>
+    <notes>Doing only the templates was still a big task but was much more minimal and doable.</notes>
+  </div>
+
+  <div>
+    Portland
+    <notes>Portland was a whirlwind of activity.</notes>
+    <notes>One of the most notable things about Portland was that we trained a small army of frontend developers how to do PHP performance testing.</notes>
+    <notes>Every template we converted from PHP to Twig needed performance testing.</notes>
+  </div>
+
+  <div>
+    Front end respect!
+    <notes>This is where I take a moment to appreciate the fact that frontend developers don't have an easy job.</notes>
+    <notes>The frontend world changes so quickly and we were still able to get these folks to help with backend performance testing in Portland.</notes>
+  </div>
+
+  <div data-bodyclass="image-slide">
+    <a href="https://twitter.com/Cottser/status/337510823079579648"><img src="assets/portland-3am.png" alt="Sprinting in Portland at 3am"></a>
+    <notes>I worked hard in Portland, got a really bad DrupalFlu, but as you may know we got Twig into Drupal 8.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Express your angle
+    <notes>Whatever you're doing put your own twist on it.</notes>
+    <notes>For me it's been how I review patches (eye for detail).</notes>
+    <notes>Automating things (bulk issue creation).</notes>
+    <notes>And so on.</notes>
+  </div>
+
+  <div>
+    Theming experience
+    <notes>We of course kept working on theme function conversions and did manage to get them all 150+ converted for Drupal 8's release.</notes>
+    <notes>We also worked on some other things like making theme suggestions a bit easier to work with.</notes>
+    <notes>If you're interested in more stories from this time period you can come to my session at 4:04pm in room 404 (hopefully you can find it).</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Deadlines can be motivating
+    <notes>Even after Portland we ran into other deadlines. Betas, RCs, etc.</notes>
+    <notes>Moving (or perceptively moving) deadlines can be de-motivating.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Take breaks
+    <notes>Take breaks from time to time, especially when things get overwhelming.</notes>
+    <notes>Over the years I've definitely taken breaks.</notes>
+  </div>
+
+  <div>
+    Provisional core committer
+    <notes>Earlier this year I became a provisional core committer, focusing on theming and frontend.</notes>
+    <notes>It's been a great experience so far.</notes>
+    <notes>One of the highlights was my live commit in New Orleans which was very long but well received.</notes>
+    <notes>I struggle with juggling core committer duties, other core duties, my life, and my dayjob.</notes>
+  </div>
+
+  <div data-bodyclass="take-away">
+    Stay focused
+    <notes>Keep at it and be aware of distractions.</notes>
+  </div>
+  <div data-bodyclass="take-away">
+    Keep moving
+    <notes>Don't be afraid to step down from existing things to make way for things that you're more passionate about.</notes>
+    <notes>Remember to be a human.</notes>
+  </div>
+
+  <div>
+    <span class="nobreak">Thank you.</span>
+  </div>
+
+  <div>
+    Q&amp;A<br>
+    #HeyCottser
   </div>
 
 </body>
